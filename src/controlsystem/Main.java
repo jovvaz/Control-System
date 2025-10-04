@@ -20,7 +20,8 @@ System.out.println("### INICIANDO SIMULAÇÃO DE PRODUÇÃO ###");
 ProdutoRepository produtoRepository = new ProdutoRepositoryEmMemoria();
 FichaTecnicaRepository fichaTecnicaRepository = new FichaTecnicaRepositoryEmMemoria();
 EstoqueService estoqueService = new EstoqueService(produtoRepository);
-ProducaoService producaoService = new ProducaoService(produtoRepository, fichaTecnicaRepository);
+ProducaoService producaoService = new ProducaoService(produtoRepository, 
+        fichaTecnicaRepository, estoqueService);
 
 // --- 2. CADASTRO DE ITENS E ESTOQUE INICIAL ---
 System.out.println("\n--- Cadastrando produtos e matérias-primas ---");

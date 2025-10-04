@@ -6,6 +6,7 @@ package controlsystem.service;
 
 import controlsystem.Produto;
 import controlsystem.ProdutoRepository;
+import controlsystem.TipoMovimentacao;
 import controlsystem.TipoProduto;
 
 
@@ -65,6 +66,14 @@ public Produto cadastrarNovoProduto(String nome, String descricao, TipoProduto t
 
     return novoProduto;
 }
+
+    void registrarSaida(String id, double quantidadeTotalConsumida, TipoMovimentacao tipoMovimentacao) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void registrarEntrada(String produtoAcabadoId, double quantidadeAProduzir, TipoMovimentacao tipoMovimentacao) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
 
 }

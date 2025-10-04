@@ -39,9 +39,17 @@ public Map<Produto, Double> getComponentes() {
     return this.componentes;
 }
 
-    void adicionarComponente(Produto tampo, int i) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void adicionarComponente(Produto materiaPrima, double quantidade) {
+    // Validação: Garante que estamos adicionando apenas matérias-primas como componentes
+    if (materiaPrima.getTipo() != TipoProduto.MATERIA_PRIMA) {
+        throw new IllegalArgumentException("Um componente de uma Ficha Técnica deve ser uma MATERIA_PRIMA.");
     }
+
+    // Ação: Adiciona o componente (chave) e a quantidade (valor) ao nosso "dicionário" Map
+    this.componentes.put(materiaPrima, quantidade);
+}
+    
+    
         }
 
 

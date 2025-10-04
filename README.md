@@ -43,7 +43,7 @@ O projeto está atualmente na fase de desenvolvimento do **backend core em Java 
 - [x] Modelagem do Domínio (Produtos, Ficha Técnica)
 - [x] Implementação dos Repositórios em Memória
 - [x] Criação dos Serviços de Estoque e Produção
-- [ ] Implementar a lógica de baixa de estoque e finalização de produção.
+- [x] Implementar a lógica de baixa de estoque e finalização de produção.
 - [ ] Integração com um Banco de Dados (PostgreSQL) usando JPA/Hibernate.
 - [ ] Construção de uma API REST com Spring Boot.
 - [ ] Implantação em um serviço de Cloud.

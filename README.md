@@ -49,6 +49,35 @@ O projeto está atualmente na fase de desenvolvimento do **backend core em Java 
 - [ ] Implantação em um serviço de Cloud.
 - [ ] Desenvolvimento da interface Frontend.
 
+
+---
+
+## 🏆 Marco Atingido: Lógica de Negócio Concluída! (Outubro de 2025)
+
+A primeira grande fase do projeto foi concluída com sucesso! Todo o "cérebro" do sistema, contendo a lógica de negócio para controle de estoque e simulação de produção, está **100% funcional em memória**.
+
+Isso significa que o sistema já é capaz de simular e gerenciar o fluxo de produção de ponta a ponta, validando a arquitetura e as regras de negócio antes mesmo da implementação do banco de dados e da interface de usuário.
+
+#### ✨ Últimas Adições e Funcionalidades Implementadas:
+
+* **Arquitetura em 3 Camadas:** O projeto foi estruturado de forma profissional, separando as responsabilidades:
+    * **Modelo:** Define as entidades do negócio (`Produto`, `FichaTecnica`, etc.).
+    * **Repositório:** Abstrai o acesso aos dados (atualmente em memória, pronto para o BD).
+    * **Serviço:** Orquestra as regras de negócio complexas.
+
+* **Serviço de Estoque (`EstoqueService`):**
+    * Responsável por todas as operações de estoque, como cadastrar novos produtos, registrar entradas e saídas.
+
+* **Serviço de Produção (`ProducaoService`):**
+    * **Verificação de Viabilidade:** O sistema consegue analisar a "receita" (`FichaTecnica`) de um produto e verificar se há matéria-prima suficiente em estoque para atender a uma ordem de produção.
+    * **Execução da Produção:** Após a verificação, o serviço executa a ordem, dando baixa automática no estoque das matérias-primas consumidas e adicionando o produto final ao estoque.
+
+* **Simulação Completa:** Foi criado um script de teste (`Main.java`) que valida todo o fluxo, simulando cenários de sucesso (produção viável) e de falha (estoque insuficiente), garantindo a robustez da lógica implementada.
+
+---
+
+
+
 ## ✍️ Autor
 
 
@@ -56,3 +85,6 @@ O projeto está atualmente na fase de desenvolvimento do **backend core em Java 
 * **[João Victor Vaz de Queiroz]** - https://www.linkedin.com/in/joaovictorvazdeq/
 
 ```
+
+
+
